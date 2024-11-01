@@ -1,6 +1,7 @@
 <template>
 <!-- project description is here-->
-  <div>Icon</div>
+  <div>
+  </div>
 </template>
 
 <script setup lang='ts'>
@@ -12,4 +13,11 @@ onMounted(() => {
 
 </script>
 <style scoped lang='scss'>
+.front1{
+  font-family: 'customFront';
+  margin-bottom: 10px;
+}
+.front2{
+  font-family: 'customFront2';
+}
 </style>
