@@ -1,10 +1,22 @@
 @use 'sass:color';
-$colors:(primary:#409eff,success:#67c23a,warning:#e6a23c,danger:#f56c6c,error:#f56c6c,info:#909399);
-:root{
-    @each $name,$color in $colors{
+$colors: (
+    default:#fff,
+    primary:#409eff,
+    success:#67c23a,
+    warning:#e6a23c,
+    danger:#f56c6c,
+    error:#f56c6c,
+    info:#909399
+);
+
+:root {
+    --my-border-radius:20px;
+    @each $name, $color in $colors {
         --my-color-#{$name}:#{$color};
-        @for $i from 1 through 4{
+        --my-color-font-color-#{$name}:#{$color};
+        @for $i from 1 through 4 {
             --my-color-#{$name}-light-#{$i *2 + 1}:#{color.mix(#fff,$color,($i *2+1)*10%)};
         }
+
     }
 }
