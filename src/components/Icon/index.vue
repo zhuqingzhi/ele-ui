@@ -6,8 +6,12 @@
 <script setup>
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import iconProps from "./props";
+defineOptions({
+  name:'ele-icon'
+})
 const props = defineProps(iconProps);
-console.log('ddd',props.icon)
+console.log('ddd', props.icon)
+
 </script>
 <style scoped lang='scss'>
 </style>

@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build:es": "vite build --config vite.es.config.js",
+    "build:umd": "vite build --config vite.umd.config.js",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -13,15 +14,19 @@
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/free-regular-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
-    "@fortawesome/vue-fontawesome": "^3.0.8",
-    "@icon-park/vue-next": "^1.4.2",
-    "sass": "^1.80.5",
-    "vue": "^3.5.12",
-    "vue-router": "4"
+    "@fortawesome/vue-fontawesome": "^3.0.8"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
     "@vitejs/plugin-vue": "^5.1.4",
-    "vite": "^5.4.10"
+    "vite": "^5.4.10",
+    "vue": "^3.5.12",
+    "vue-router": "4",
+    "sass": "^1.80.5"
+
+  },
+  "peerDependencies": {
+    "vue": "^3.5.12"
+   
   }
 }

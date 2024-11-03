@@ -18,6 +18,9 @@
 
 <script setup lang='ts'>
 import Icon from '../Icon/index.vue'
+defineOptions({
+  name:'ele-button'
+})
 const props = defineProps({
   type: {
     type: String,
